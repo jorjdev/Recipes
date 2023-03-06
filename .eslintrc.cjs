@@ -12,12 +12,22 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    project: './tsconfig.json'
+    project: './tsconfig.json',
   },
   plugins: [
-    'react'
+    'react',
+    "@typescript-eslint"
   ],
+  ignorePatterns: ["/dist"],
   rules: {
+    "react/prop-types": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        namedComponents: "arrow-function",
+        unnamedComponents: "arrow-function",
+      },
+    ],
     "react/react-in-jsx-scope": "off",
     "import/extensions": [
       "error",
