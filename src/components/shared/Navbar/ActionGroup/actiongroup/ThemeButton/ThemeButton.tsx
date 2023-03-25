@@ -1,4 +1,6 @@
 import React from 'react';
+import DarkModeSvg from '@/assets/dark-mode.svg';
+import LightModeSvg from '@/assets/light-mode.svg';
 
 interface ThemeButtonProps {
   className: string;
@@ -10,10 +12,10 @@ const ThemeButton: React.FC<ThemeButtonProps> = ({ className, size, mode }) => (
   <button className={className} type="button">
     <img
       src={
-          'src/assets/'
-          + `${mode === 'light' ? 'light-mode.svg' : 'dark-mode.svg'}`
+
+        mode === 'light' ? LightModeSvg : DarkModeSvg
         }
-      alt="Logo"
+      alt="Theme"
       className={`w-${size} h-${size}`}
     />
   </button>

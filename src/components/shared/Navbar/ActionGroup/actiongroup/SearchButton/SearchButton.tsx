@@ -1,4 +1,5 @@
 import React from 'react';
+import SearchIconSvg from '@/assets/search-icon.svg';
 
 interface SearchButtonProps {
   className: string,
@@ -8,7 +9,7 @@ interface SearchButtonProps {
 const SearchButton : React.FC<SearchButtonProps> = ({ className, size }) => (
   <button className={className} type="button">
 
-    <img src="src/assets/search-icon.svg" alt="Logo" className={`w-${size} h-${size}`} />
+    <img src={SearchIconSvg} alt="Search" className={`w-${size} h-${size}`} />
   </button>
 );
 
