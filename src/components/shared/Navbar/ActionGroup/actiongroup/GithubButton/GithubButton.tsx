@@ -1,4 +1,5 @@
 import React from 'react';
+import GithubSvg from '@/assets/github-icon.svg';
 
 interface GithubButtonProps {
   className: string,
@@ -8,7 +9,7 @@ interface GithubButtonProps {
 const GithubButton : React.FC<GithubButtonProps> = ({ className, size }) => (
   <button className={className} type="button">
 
-    <img src="src/assets/github-icon.svg" alt="Logo" className={`w-${size} h-${size}`} />
+    <img src={GithubSvg} alt="Github" className={`w-${size} h-${size}`} />
   </button>
 );
 
