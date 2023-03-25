@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import ActionGroup from './ActionGroup';
 
 it('should find the component associated with the text', () => {
-  render(<App />);
+  render(<ActionGroup className="" />);
   expect(screen.getByText(/search/i)).toBeDefined();
 });

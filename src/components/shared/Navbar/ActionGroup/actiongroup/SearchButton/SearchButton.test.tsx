@@ -1,7 +1,7 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
+import SearchButton from './SearchButton';
 
 it('should find the component associated with the text', () => {
-  render(<App />);
+  render(<SearchButton className="" size={2} />);
   expect(screen.getByText(/search/i)).toBeDefined();
 });
