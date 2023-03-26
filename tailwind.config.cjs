@@ -9,7 +9,14 @@ module.exports = {
       'navi-blue':'#333d51',
       'transparent':'#00000000',
       'search-bg-color':'#575d6d',
-      'search-text':'#D3D3D3'
+      'search-text':'#D3D3D3',
+
+      dark: {
+        'background':'#333d51',
+      },
+      light:{
+        'background':'#FAF9F6',
+      }
     },
 
     screens: {
