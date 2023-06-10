@@ -2,8 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{js,ts,jsx,tsx}","./index.html"],
   theme: {
-    extend: {
-    
+      extend: {
+        fontFamily: {
+          sans: ['Roboto', 'system-ui', 'sans-serif'],
+        },
     },
     colors: {
       'navi-blue':'#333d51',
@@ -13,9 +15,13 @@ module.exports = {
 
       dark: {
         'background':'#333d51',
+        'search-bg-color':'#575d6d',
+        'search-text':'#D3D3D3',
       },
       light:{
         'background':'#FAF9F6',
+        'search-bg-color':'#ebecf0',
+        'search-text':'#24272e',
       }
     },
 
